@@ -13,6 +13,7 @@ function info {
 info "Provision-script user: `whoami`"
 
 info "Restart web-stack"
-service php7.0-fpm restart
+service php7.2-fpm restart
+service apache2 restart
 service nginx restart
 service mysql restart
